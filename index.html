@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>کلینیک روان‌شناسی سپهر آرامش</title>
+  <meta name="description" content="کلینیک روان‌شناسی سپهر آرامش؛ مشاوره و روان‌شناسی فردی، زوج، کودک و نوجوان با رویکردی محترمانه، محرمانه و متناسب با شرایط هر فرد.">
+  <meta name="theme-color" content="#0d2a3a">
+
+  <!-- حالت JS و failsafe: اگر اسکریپت اصلی تا ۴ ثانیه آماده نشود، همه‌ی محتوا نمایش داده می‌شود -->
+  <script>
+    document.documentElement.classList.add("js");
+    setTimeout(function () {
+      if (!window.__sepehrReady) document.documentElement.classList.add("anim-failsafe");
+    }, 4000);
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
+
+  <!-- ===== Icon sprite (آیکون‌های درون‌خطی به سبک Lucide؛ README را ببینید) ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20v-1a5.5 5.5 0 0 1 5.5-5.5h2a5.5 5.5 0 0 1 5.5 5.5v1"/><circle cx="17" cy="9" r="2.8"/><path d="M17.5 14.2a4.8 4.8 0 0 1 4 4.8v1"/></symbol>
+      <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2.5 4 2.5S16 14 16 14"/><path d="M9 9.5h.01M15 9.5h.01"/></symbol>
+      <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v2.5a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V4z"/><path d="m9 14 2 2 4-4"/></symbol>
+      <symbol id="i-wind" viewBox="0 0 24 24"><path d="M3 8h10a3 3 0 1 0-3-3"/><path d="M3 12h15a3 3 0 1 1-3 3"/><path d="M3 16h6"/></symbol>
+      <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21v-9"/><path d="M12 12c0-3.5-2.5-6-7-6 0 3.5 2.5 6 7 6z"/><path d="M12 14c0-3 2.2-5.5 7-5.5 0 3-2.2 5.5-7 5.5z"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/></symbol>
+      <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3.5l1.8 4.5-2.2 1.4a11 11 0 0 0 5.5 5.5l1.4-2.2L19.5 15v3.5a1.5 1.5 0 0 1-1.6 1.5C10.7 19.6 4.4 13.3 4 6.1A1.5 1.5 0 0 1 5 4z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 8 8 5.5L20 8"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.3 2.9 7.8 7 9.5 4.1-1.7 7-5.2 7-9.5V6l-7-3z"/><path d="m9 12 2.2 2.2L15 10.5"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.5-4A8 8 0 1 1 20 11.5z"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.2 4.3 4.3 0 0 1 19.5 10C19.5 15.4 12 20 12 20z"/></symbol>
+      <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 8h14"/><path d="m5 8-3 6a3 3 0 0 0 6 0L5 8zM19 8l-3 6a3 3 0 0 0 6 0l-3-6z"/></symbol>
+      <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3 2.5 20h19L12 3z"/><path d="M12 10v4M12 17.5h.01"/></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ===== A. HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="site-header__bar">
+        <a class="brand" href="#top" aria-label="کلینیک روان‌شناسی سپهر آرامش، بازگشت به بالای صفحه">
+          <span class="brand__mark"><img src="assets/images/logo.png" alt="" width="722" height="672" decoding="async"></span>
+          <span class="brand__text">
+            <span class="brand__name">سپهر آرامش</span>
+            <span class="brand__sub">کلینیک روان‌شناسی</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="site-nav" aria-label="ناوبری اصلی">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#services">خدمات</a></li>
+            <li><a class="nav__link" href="#team">تیم ما</a></li>
+            <li><a class="nav__link" href="#about">درباره‌ی کلینیک</a></li>
+            <li><a class="nav__link" href="#faq">سوالات متداول</a></li>
+            <li><a class="nav__link" href="#contact">تماس</a></li>
+            <li class="nav__cta"><a class="btn btn--primary" href="#appointment" data-link="booking">رزرو نوبت</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn--primary btn--sm" href="#appointment" data-link="booking">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#i-calendar"/></svg>
+            رزرو نوبت
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="باز و بسته کردن منو">
+            <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+            <svg class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== B. HERO ===== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__aurora" aria-hidden="true"><i></i><i></i></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="hero__badge reveal"><i aria-hidden="true"></i>مشاوره و روان‌شناسی، با رویکردی فردمحور</p>
+
+          <h1 id="hero-title" data-split>
+            <span class="hl">فضایی امن</span> برای شنیده‌شدن، و مسیری روشن‌تر برای ادامه
+          </h1>
+
+          <p class="hero__lead stream" data-stream>
+            در کلینیک سپهر آرامش، هر جلسه با گوش دادن شروع می‌شود. روان‌شناسان ما با احترام، رازداری و رویکردی متناسب با شرایط شما، در کنارتان هستند.<span class="stream__dot" aria-hidden="true"></span>
+          </p>
+
+          <div class="hero__actions reveal" style="--i:6">
+            <a class="btn btn--primary btn--lg" href="#appointment" data-link="booking">
+              رزرو نوبت
+              <svg class="icon icon--go" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+            </a>
+            <a class="btn btn--secondary btn--lg" href="#services">آشنایی با خدمات</a>
+          </div>
+
+          <p class="hero__note reveal" style="--i:8">
+            <svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>
+            گفت‌وگوهای شما محرمانه است.
+          </p>
+        </div>
+
+        <div class="hero__visual" data-hero-visual>
+          <div class="orb">
+            <span class="orb__ring"></span><span class="orb__ring"></span><span class="orb__ring"></span>
+            <div class="orb__logo"><img src="assets/images/logo.png" alt="لوگوی کلینیک روان‌شناسی سپهر آرامش" width="722" height="672" fetchpriority="high" decoding="async"></div>
+          </div>
+
+          <div class="float-card card float-card--a" aria-hidden="true">
+            <span class="float-card__icon"><svg class="icon"><use href="#i-shield"/></svg></span>
+            <div><strong>رازداری حرفه‌ای</strong><span>اطلاعات شما نزد روان‌شناس محفوظ است</span></div>
+          </div>
+          <div class="float-card card float-card--b" aria-hidden="true">
+            <span class="float-card__icon"><svg class="icon"><use href="#i-chat"/></svg></span>
+            <div><strong>گفت‌وگوی بی‌عجله</strong><span>با ریتمی که برای شما مناسب است</span></div>
+          </div>
+          <div class="float-card card float-card--c" aria-hidden="true">
+            <span class="breath"><i></i></span>
+            <div><strong>یک نفس آرام</strong><span>شروع هر مسیر، همین‌جاست</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== C. SERVICES ===== -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">خدمات</p>
+          <h2 id="services-title">در کنار شما، در هر مرحله از مسیر</h2>
+          <p class="lead">هر فرد شرایط و نیازهای خودش را دارد. خدمات ما برای همین طراحی شده‌اند که بتوانید گفت‌وگو را از جایی شروع کنید که برایتان مناسب‌تر است.</p>
+        </div>
+
+        <ul class="services__grid" data-stagger>
+          <li class="service card reveal">
+            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-user"/></svg></span>
+            <h3>مشاوره‌ی فردی</h3>
+            <p>جلسه‌هایی یک‌به‌یک برای صحبت درباره‌ی دغدغه‌ها، تصمیم‌های سخت و احساساتی که تنهایی سخت‌تر می‌شوند.</p>
+            <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
+          </li>
+          <li class="service card reveal">
+            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-users"/></svg></span>
+            <h3>مشاوره‌ی زوج</h3>
+            <p>فضایی بی‌طرف برای گفت‌وگوی بهتر، شنیدن یکدیگر و پیدا کردن راهی مشترک برای چالش‌های رابطه.</p>
+            <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
+          </li>
+          <li class="service card reveal">
+            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-smile"/></svg></span>
+            <h3>روان‌شناسی کودک و نوجوان</h3>
+            <p>همراهی با کودکان، نوجوانان و خانواده‌هایشان، با زبانی که برای هر سن قابل فهم و آرامش‌بخش باشد.</p>
+            <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
+          </li>
+          <li class="service card reveal">
+            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-clipboard"/></svg></span>
+            <h3>ارزیابی روان‌شناختی</h3>
+            <p>بررسی دقیق و اصولی با ابزارهای استاندارد، برای شناخت بهتر وضعیت فعلی و برنامه‌ریزی مسیر بعدی.</p>
+            <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
+          </li>
+          <li class="service card reveal">
+            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-wind"/></svg></span>
+            <h3>مدیریت استرس و اضطراب</h3>
+            <p>آشنایی با روش‌های علمی برای شناخت نشانه‌های استرس و اضطراب و یادگیری مهارت‌های روزمره برای مواجهه با آن‌ها.</p>
+            <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
+          </li>
+          <li class="service card reveal">
+            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-sprout"/></svg></span>
+            <h3>رشد فردی و تغییر رفتار</h3>
+            <p>تمرکز بر هدف‌گذاری، عادت‌ها و الگوهای رفتاری، برای کسانی که می‌خواهند آگاهانه تغییر کنند و رشد کنند.</p>
+            <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== D. TEAM (محتوای نمونه؛ فقط با اطلاعات تأییدشده جایگزین شود) ===== -->
+    <section class="section" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">تیم ما</p>
+          <h2 id="team-title">روان‌شناسانی که با دقت و احترام همراه شما هستند</h2>
+          <p class="lead">کارت اول اطلاعات واقعی است. دو کارت دیگر نمونه‌اند و باید پیش از انتشار با نام، تصویر و مشخصات تأییدشده‌ی همکاران جایگزین شوند.</p>
+        </div>
+
+        <ul class="team__grid" data-stagger>
+          <li class="member card reveal">
+            <div class="member__photo member__photo--cutout">
+              <img src="assets/images/team-ishaghi.png" alt="سید مرتضی اسحاقی، موسس و مدیر کلینیک" width="413" height="442" loading="lazy" decoding="async">
+            </div>
+            <div class="member__body">
+              <h3>سید مرتضی اسحاقی</h3>
+              <p class="member__role">موسس و مدیر کلینیک</p>
+              <p class="member__bio">دکتری روان‌شناسی بالینی با بیش از ۲۰ سال سابقه‌ی درمانی. حوزه‌ی کاری او خانواده‌درمانی و کار با زوج‌ها در مسیر بهتر شدن رابطه است.</p>
+              <div class="member__meta">
+                <span><b>تحصیلات:</b> دکتری روان‌شناسی بالینی</span>
+                <span><b>سابقه:</b> بیش از ۲۰ سال سابقه‌ی درمانی</span>
+              </div>
+            </div>
+          </li>
+          <li class="member card reveal">
+            <div class="member__photo">
+              <span class="placeholder-tag">نمونه</span>
+              <span class="member__avatar" aria-hidden="true"><svg class="icon"><use href="#i-user"/></svg></span>
+            </div>
+            <div class="member__body">
+              <h3>نام مشاور</h3>
+              <p class="member__role">عنوان تخصصی، مثلاً مشاور خانواده</p>
+              <p class="member__bio">در این بخش، معرفی کوتاهی از رویکرد درمانی، حوزه‌های کاری و تجربه‌ی حرفه‌ای همکار درج می‌شود.</p>
+              <div class="member__meta">
+                <span><b>تحصیلات:</b> پس از تأیید درج شود</span>
+                <span><b>شماره‌ی پروانه:</b> پس از تأیید درج شود</span>
+              </div>
+            </div>
+          </li>
+          <li class="member card reveal">
+            <div class="member__photo">
+              <span class="placeholder-tag">نمونه</span>
+              <span class="member__avatar" aria-hidden="true"><svg class="icon"><use href="#i-user"/></svg></span>
+            </div>
+            <div class="member__body">
+              <h3>نام روان‌شناس کودک</h3>
+              <p class="member__role">عنوان تخصصی، مثلاً روان‌شناس کودک و نوجوان</p>
+              <p class="member__bio">در این بخش، معرفی کوتاهی از رویکرد درمانی، حوزه‌های کاری و تجربه‌ی حرفه‌ای همکار درج می‌شود.</p>
+              <div class="member__meta">
+                <span><b>تحصیلات:</b> پس از تأیید درج شود</span>
+                <span><b>شماره‌ی پروانه:</b> پس از تأیید درج شود</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== E. ABOUT ===== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__intro reveal">
+          <p class="eyebrow">درباره‌ی کلینیک</p>
+          <h2 id="about-title">مراقبت، <span class="hl hl--scroll">پیش از هر چیز، یعنی شنیدن</span></h2>
+          <p>سپهر آرامش را با این باور ساخته‌ایم که کمک گرفتن از روان‌شناس باید تجربه‌ای محترمانه و بی‌قضاوت باشد. ما هر فرد را با داستان و شرایط خودش می‌بینیم و مسیر گفت‌وگو را با او هماهنگ می‌کنیم.</p>
+          <p>تلاش ما این است که با شفافیت درباره‌ی روند کار، رعایت اصول حرفه‌ای و حفظ حریم خصوصی، فضایی فراهم کنیم که بتوانید با خیال راحت از دغدغه‌هایتان بگویید.</p>
+          <p class="about__notice card">
+            <svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>
+            <span>مشاوره و روان‌شناسی جایگزین درمان پزشکی نیست. در صورت نیاز، همکاران ما شما را برای ارزیابی تخصصی‌تر راهنمایی می‌کنند.</span>
+          </p>
+        </div>
+
+        <ul class="principles" data-stagger>
+          <li class="principle card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>
+            <h3>احترام و بی‌قضاوتی</h3>
+            <p>هر تجربه‌ای قابل شنیده‌شدن است. جلسه‌ها بر پایه‌ی احترام متقابل پیش می‌روند.</p>
+          </li>
+          <li class="principle card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>
+            <h3>رازداری</h3>
+            <p>اطلاعات و گفت‌وگوهای شما مطابق اصول اخلاق حرفه‌ای محرمانه نگه داشته می‌شود.</p>
+          </li>
+          <li class="principle card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>
+            <h3>مراقبت فردمحور</h3>
+            <p>برنامه‌ی هر جلسه با توجه به نیاز، سن و شرایط خود شما تنظیم می‌شود، نه به‌صورت یک نسخه‌ی ثابت.</p>
+          </li>
+          <li class="principle card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-scale"/></svg>
+            <h3>مسئولیت حرفه‌ای</h3>
+            <p>هر همکار فقط در حوزه‌ی تخصص و صلاحیت خود فعالیت می‌کند و در صورت لزوم ارجاع می‌دهد.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== F. APPOINTMENT CTA ===== -->
+    <section class="section" id="appointment" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta card reveal">
+          <p class="eyebrow">رزرو نوبت</p>
+          <h2 id="cta-title">اولین قدم، <span class="gradient-text">یک نوبت</span> است</h2>
+          <p class="cta__lead">رزرو نوبت از طریق پنل مراجعان انجام می‌شود. روز و ساعت مناسب را انتخاب کنید و بقیه‌ی مسیر را با هم پیش می‌بریم.</p>
+
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="#appointment" data-link="booking" data-booking-cta>
+              ورود به پنل رزرو نوبت
+              <svg class="icon icon--go" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+            </a>
+            <a class="btn btn--secondary btn--lg" href="#contact">تماس با کلینیک</a>
+          </div>
+
+          <ol class="cta__steps">
+            <li><b aria-hidden="true">۱</b>انتخاب خدمت</li>
+            <li><b aria-hidden="true">۲</b>انتخاب روز و ساعت</li>
+            <li><b aria-hidden="true">۳</b>تأیید نوبت</li>
+          </ol>
+
+          <!-- فقط تا زمانی که نشانی واقعی پنل در js/config.js تنظیم نشده نمایش داده می‌شود -->
+          <p class="cta__dev placeholder-tag" data-booking-dev role="note">
+            نشانی پنل رزرو هنوز تنظیم نشده است؛ مقدار bookingUrl را در js/config.js وارد کنید.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== G. FAQ ===== -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">سوالات متداول</p>
+          <h2 id="faq-title">پیش از اولین جلسه، شاید این‌ها را بپرسید</h2>
+          <p class="lead">پاسخ‌های این بخش نمونه است و باید با اطلاعات واقعی کلینیک تکمیل شود.</p>
+        </div>
+
+        <div class="accordion card reveal" data-accordion>
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button class="accordion__button" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">
+                نوبت را چگونه رزرو کنم؟
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-1" role="region" aria-labelledby="faq-1-btn">
+              <div class="accordion__panel-inner"><div>برای رزرو، روی دکمه‌ی «رزرو نوبت» بزنید تا به پنل مراجعان منتقل شوید. در آنجا خدمت، روز و ساعت دلخواهتان را انتخاب و نوبت را تأیید می‌کنید. اگر ترجیح می‌دهید، می‌توانید با کلینیک تماس بگیرید.</div></div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button class="accordion__button" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">
+                چه خدماتی ارائه می‌شود؟
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-2" role="region" aria-labelledby="faq-2-btn">
+              <div class="accordion__panel-inner"><div>مشاوره‌ی فردی، مشاوره‌ی زوج، روان‌شناسی کودک و نوجوان، ارزیابی روان‌شناختی، مدیریت استرس و اضطراب، و رشد فردی و تغییر رفتار. اگر مطمئن نیستید کدام خدمت مناسب‌تر است، هنگام رزرو یا تماس می‌توانید راهنمایی بگیرید.</div></div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button class="accordion__button" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">
+                در اولین جلسه چه اتفاقی می‌افتد؟
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-3" role="region" aria-labelledby="faq-3-btn">
+              <div class="accordion__panel-inner"><div>معمولاً جلسه‌ی اول با آشنایی و گفت‌وگو درباره‌ی دلیل مراجعه‌ی شما آغاز می‌شود. لازم نیست چیزی را از پیش آماده کنید؛ می‌توانید از هر جایی که برایتان راحت‌تر است شروع کنید. مدت جلسه و هزینه را پیش از رزرو اعلام می‌کنیم. <span class="placeholder-tag">جزئیات واقعی درج شود</span></div></div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button class="accordion__button" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">
+                آیا گفت‌وگوهای من محرمانه می‌ماند؟
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-4" role="region" aria-labelledby="faq-4-btn">
+              <div class="accordion__panel-inner"><div>رازداری یکی از اصول اخلاق حرفه‌ای در روان‌شناسی است و محتوای جلسه‌ها محرمانه نگه داشته می‌شود. استثناهای قانونی و اخلاقی، مثل خطر جدی برای جان فرد یا دیگران، پیش از شروع کار برایتان توضیح داده می‌شود.</div></div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button class="accordion__button" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">
+                اگر نتوانم در نوبت حاضر شوم چه کنم؟
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn">
+              <div class="accordion__panel-inner"><div>سیاست جابه‌جایی یا لغو نوبت را در اینجا بنویسید و پیش از انتشار با قوانین واقعی کلینیک تطبیق دهید. <span class="placeholder-tag">متن نمونه</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== H. CONTACT (همه‌ی مقادیر نمونه‌اند) ===== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">تماس با ما</p>
+          <h2 id="contact-title">هر سوالی دارید، بپرسید</h2>
+          <p class="lead">برای هماهنگی نوبت یا پرسیدن هر سؤال، با ما تماس بگیرید یا مستقیم به کلینیک مراجعه کنید.</p>
+        </div>
+
+        <div class="contact__grid" data-stagger>
+          <dl class="contact__list card reveal">
+            <div class="contact__item">
+              <span class="float-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <div><dt>نشانی</dt><dd><address>احمدآباد ۷، نبش قائم، مجتمع گوهرشاد، طبقه‌ی سوم، واحد ۳۰۹</address></dd></div>
+            </div>
+            <div class="contact__item">
+              <span class="float-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <div><dt>تلفن</dt><dd><a class="contact__link ltr" href="tel:+989150703239" aria-label="تماس تلفنی با کلینیک، ۰۹۱۵ ۰۷۰ ۳۲۳۹">۰۹۱۵ ۰۷۰ ۳۲۳۹</a></dd></div>
+            </div>
+            <div class="contact__item">
+              <span class="float-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+              <div><dt>ساعت کاری</dt><dd>همه‌ی روزها، ساعت ۹ تا ۲۰ <small>جمعه‌ها و تعطیلات رسمی تعطیل است.</small></dd></div>
+            </div>
+            <div class="contact__item">
+              <span class="float-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <div><dt>ایمیل</dt><dd><a class="contact__link ltr" href="mailto:sepehr.ftc@gmail.com">sepehr.ftc@gmail.com</a></dd></div>
+            </div>
+          </dl>
+
+          <div class="map-slot card reveal" data-map-slot>
+            <!-- نقشه‌ی داخل صفحه: مقدار mapEmbedUrl را در js/config.js بگذارید (راهنما در README) -->
+            <div class="map-slot__inner">
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+              <h3>موقعیت کلینیک روی نقشه</h3>
+              <p>احمدآباد ۷، نبش قائم، مجتمع گوهرشاد</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="emergency card reveal">
+          <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>
+          <span><b>در شرایط اورژانسی</b> یا اگر فکر آسیب‌زدن به خود یا دیگران دارید، منتظر نوبت نمانید: با اورژانس <b>۱۱۵</b> یا اورژانس اجتماعی <b>۱۲۳</b> تماس بگیرید.</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== I. FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <a class="brand" href="#top">
+            <span class="brand__mark"><img src="assets/images/logo.png" alt="" width="722" height="672" decoding="async"></span>
+            <span class="brand__text"><span class="brand__name">سپهر آرامش</span><span class="brand__sub">کلینیک روان‌شناسی</span></span>
+          </a>
+          <p>فضایی محترمانه و محرمانه برای گفت‌وگو درباره‌ی دغدغه‌ها، با همراهی متخصصان.</p>
+        </div>
+
+        <nav aria-label="پیوندهای فوتر">
+          <h2 class="footer__title">دسترسی سریع</h2>
+          <ul class="footer__links">
+            <li><a href="#services">خدمات</a></li>
+            <li><a href="#team">تیم ما</a></li>
+            <li><a href="#about">درباره‌ی کلینیک</a></li>
+            <li><a href="#faq">سوالات متداول</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">رزرو و تماس</h2>
+          <ul class="footer__links">
+            <li><a href="#appointment" data-link="booking">رزرو نوبت</a></li>
+            <li><a href="#contact">اطلاعات تماس</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer__title">اطلاعات تماس</h2>
+          <ul class="footer__contact">
+            <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-pin"/></svg><address>احمدآباد ۷، نبش قائم، مجتمع گوهرشاد، طبقه‌ی سوم، واحد ۳۰۹</address></li>
+            <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-phone"/></svg><a class="contact__link ltr" href="tel:+989150703239" aria-label="تماس تلفنی با کلینیک، ۰۹۱۵ ۰۷۰ ۳۲۳۹">۰۹۱۵ ۰۷۰ ۳۲۳۹</a></li>
+            <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-mail"/></svg><a class="contact__link ltr" href="mailto:sepehr.ftc@gmail.com">sepehr.ftc@gmail.com</a></li>
+            <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-clock"/></svg><span>همه‌ی روزها ۹ تا ۲۰، به‌جز جمعه‌ها و تعطیلات رسمی</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>۱۴۰۵</span> کلینیک روان‌شناسی سپهر آرامش. کلیه‌ی حقوق محفوظ است.</p>
+        <ul>
+          <li><a href="#" data-link="privacy" hidden>حریم خصوصی</a></li>
+          <li><a href="#" data-link="terms" hidden>قوانین و مقررات</a></li>
+          <li data-legal-placeholder><span class="placeholder-tag">پیوندهای حریم خصوصی و قوانین در js/config.js تنظیم می‌شوند</span></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -7,6 +7,7 @@
      Stream   — متن جریانی (الهام‌گرفته از streaming-text در VibeFarsi)
      Reveal   — ظاهر شدن بخش‌ها با IntersectionObserver
      Accordion— سوالات متداول
+     Gallery  — فیلتر برنامه‌ها و نمایش تصاویر (صفحه‌ی گالری)
    ========================================================================== */
 (function () {
   "use strict";
@@ -87,7 +88,7 @@
         toggle.setAttribute("aria-expanded", String(open));
         toggle.setAttribute("aria-label", open ? "بستن منو" : "باز کردن منو");
       }
-      function isMobile() { return window.matchMedia("(max-width: 56rem)").matches; }
+      function isMobile() { return window.matchMedia("(max-width: 64rem)").matches; }
 
       toggle.addEventListener("click", function () { setOpen(!header.classList.contains("is-open")); });
       nav.addEventListener("click", function (e) {
@@ -253,6 +254,74 @@
     }
   };
 
+  /* ---------- Gallery: فیلتر وضعیت/نوع + نمایش تصویر (بدون JS همه‌چیز نمایش داده می‌شود) ---------- */
+  var Gallery = {
+    init: function () {
+      var bar = qs("[data-gx-filters]");
+      if (!bar) return;
+      bar.hidden = false;
+      var state = { status: "upcoming", type: "all" };
+      var types = ["group", "public", "specialized"];
+
+      function apply() {
+        qsa("[data-gx-panel]").forEach(function (panel) {
+          var on = panel.getAttribute("data-gx-panel") === state.status;
+          panel.hidden = !on;
+          if (!on) return;
+          var shown = 0;
+          qsa("[data-type]", panel).forEach(function (it) {
+            var ok = state.type === "all" || it.getAttribute("data-type") === state.type;
+            it.hidden = !ok;
+            if (ok) shown++;
+          });
+          var empty = qs("[data-gx-empty]", panel);
+          if (empty) empty.hidden = shown > 0;
+        });
+        qsa("[data-status]", bar).forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-status") === state.status)); });
+        qsa("[data-type]", bar).forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-type") === state.type)); });
+      }
+      bar.addEventListener("click", function (e) {
+        var b = e.target.closest("button");
+        if (!b) return;
+        if (b.hasAttribute("data-status")) state.status = b.getAttribute("data-status");
+        if (b.hasAttribute("data-type")) state.type = b.getAttribute("data-type");
+        apply();
+      });
+
+      // پیوند مستقیم: gallery.html#group  یا  #public-past  یا  #specialized-upcoming
+      function fromHash() {
+        var h = (location.hash || "").replace("#", "");
+        var parts = h.split("-");
+        if (types.indexOf(parts[0]) > -1) {
+          state.type = parts[0];
+          if (parts[1] === "past" || parts[1] === "upcoming") state.status = parts[1];
+        } else if (h === "past" || h === "upcoming") {
+          state.status = h;
+        }
+        apply();
+      }
+      window.addEventListener("hashchange", fromHash);
+      fromHash();
+
+      // Lightbox با <dialog>
+      var dlg = qs("#lightbox");
+      if (dlg && typeof dlg.showModal === "function") {
+        var img = qs("img", dlg), cap = qs("figcaption", dlg), last = null;
+        qsa(".shot__btn").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            last = btn;
+            img.src = btn.getAttribute("data-full");
+            img.alt = "";
+            cap.textContent = btn.getAttribute("data-kind") + " — " + btn.getAttribute("data-title") + " (تصویر نمونه)";
+            dlg.showModal();
+          });
+        });
+        dlg.addEventListener("click", function (e) { if (e.target === dlg || e.target.closest("[data-lb-close]")) dlg.close(); });
+        dlg.addEventListener("close", function () { if (last) last.focus(); });
+      }
+    }
+  };
+
   function boot() {
     Config.init();
     Nav.init();
@@ -260,6 +329,7 @@
     Stream.init();
     Reveal.init();
     Accordion.init();
+    Gallery.init();
     window.__sepehrReady = true;
   }
 

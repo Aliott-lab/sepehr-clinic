@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>کلینیک روان‌شناسی سپهر آرامش</title>
-  <meta name="description" content="کلینیک روان‌شناسی سپهر آرامش؛ مشاوره و روان‌شناسی فردی، زوج، کودک و نوجوان با رویکردی محترمانه، محرمانه و متناسب با شرایط هر فرد.">
+  <meta name="description" content="کلینیک روان‌شناسی سپهر آرامش؛ مرکز تخصصی درمان‌های سیستمی زوج و خانواده، با خدمات مشاوره‌ی فردی، زوج، خانواده و کودک، گروه‌درمانی و کارگاه‌های آموزشی.">
   <meta name="theme-color" content="#0d2a3a">
 
   <!-- حالت JS و failsafe: اگر اسکریپت اصلی تا ۴ ثانیه آماده نشود، همه‌ی محتوا نمایش داده می‌شود -->
@@ -44,6 +44,10 @@
       <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 8h14"/><path d="m5 8-3 6a3 3 0 0 0 6 0L5 8zM19 8l-3 6a3 3 0 0 0 6 0l-3-6z"/></symbol>
       <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
       <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3 2.5 20h19L12 3z"/><path d="M12 10v4M12 17.5h.01"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/></symbol>
+      <symbol id="i-group" viewBox="0 0 24 24"><circle cx="12" cy="6" r="2.6"/><circle cx="5.5" cy="16.5" r="2.6"/><circle cx="18.5" cy="16.5" r="2.6"/><path d="M10.2 8.3 6.8 14M13.8 8.3l3.4 5.7M8.2 17h7.6"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5v-13z"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="m8.8 13.6-1.3 6.9 4.5-2.4 4.5 2.4-1.3-6.9"/></symbol>
       <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
     </defs>
   </svg>
@@ -65,6 +69,7 @@
             <li><a class="nav__link" href="#services">خدمات</a></li>
             <li><a class="nav__link" href="#team">تیم ما</a></li>
             <li><a class="nav__link" href="#about">درباره‌ی کلینیک</a></li>
+            <li><a class="nav__link" href="gallery.html">گالری</a></li>
             <li><a class="nav__link" href="blog.html">مقالات</a></li>
             <li><a class="nav__link" href="#faq">سوالات متداول</a></li>
             <li><a class="nav__link" href="#contact">تماس</a></li>
@@ -92,10 +97,10 @@
       <div class="hero__aurora" aria-hidden="true"><i></i><i></i></div>
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="hero__badge reveal"><i aria-hidden="true"></i>مشاوره و روان‌شناسی، با رویکردی فردمحور</p>
+          <p class="hero__badge reveal"><i aria-hidden="true"></i>مرکز تخصصی درمان‌های سیستمی زوج و خانواده</p>
 
           <h1 id="hero-title" data-split>
-            <span class="hl">فضایی امن</span> برای شنیده‌شدن، و مسیری روشن‌تر برای ادامه
+            <span class="hl">فضایی امن</span> برای تجربه‌ی حال خوب و کمک به تصمیم‌گیری بهتر
           </h1>
 
           <p class="hero__lead stream" data-stream>
@@ -144,45 +149,66 @@
         <div class="section-head reveal">
           <p class="eyebrow">خدمات</p>
           <h2 id="services-title">در کنار شما، در هر مرحله از مسیر</h2>
-          <p class="lead">هر فرد شرایط و نیازهای خودش را دارد. خدمات ما برای همین طراحی شده‌اند که بتوانید گفت‌وگو را از جایی شروع کنید که برایتان مناسب‌تر است.</p>
+          <p class="lead">هر مسئله‌ای زبان و مسیر خودش را دارد. خدمات ما برای همین طراحی شده‌اند که بتوانید گفت‌وگو را از جایی شروع کنید که برایتان مناسب‌تر است.</p>
         </div>
 
         <ul class="services__grid" data-stagger>
-          <li class="service card reveal">
+          <li class="service card reveal service--s2">
             <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-user"/></svg></span>
             <h3>مشاوره‌ی فردی</h3>
-            <p>جلسه‌هایی یک‌به‌یک برای صحبت درباره‌ی دغدغه‌ها، تصمیم‌های سخت و احساساتی که تنهایی سخت‌تر می‌شوند.</p>
+            <p>برای وقتی که با خودتان مسئله دارید و می‌خواهید در فضایی امن، آن را روشن‌تر ببینید.</p>
+            <ul class="service__topics" aria-label="موضوعات"><li>توسعه‌ی فردی</li><li>اعتماد به نفس</li><li>بلاتکلیفی</li><li>کلافگی و سردرگمی</li><li>افسردگی</li><li>اضطراب</li><li>برنامه‌ریزی برای شغل، تحصیل و آینده</li><li>تصمیم‌های مهم زندگی؛ ازدواج، جدایی و ...</li></ul>
             <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
           </li>
-          <li class="service card reveal">
+          <li class="service card reveal service--s2">
             <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-users"/></svg></span>
             <h3>مشاوره‌ی زوج</h3>
-            <p>فضایی بی‌طرف برای گفت‌وگوی بهتر، شنیدن یکدیگر و پیدا کردن راهی مشترک برای چالش‌های رابطه.</p>
+            <p>فضایی بی‌طرف برای گفت‌وگوی بهتر، شنیدن یکدیگر و پیدا کردن راهی مشترک در چالش‌های رابطه.</p>
+            <ul class="service__topics" aria-label="موضوعات"><li>بددهنی و بی‌احترامی</li><li>خشونت در رابطه</li><li>سردی عاطفی</li><li>تحقیر، سرزنش و انتقاد</li><li>عدم انعطاف</li><li>وابستگی به خانواده‌ی اصلی</li><li>مدیریت نقش‌های زناشویی</li></ul>
             <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
           </li>
-          <li class="service card reveal">
+          <li class="service card reveal service--s2">
+            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-home"/></svg></span>
+            <h3>مشاوره‌ی خانواده</h3>
+            <p>وقتی تفاوت دیدگاه‌ها فضای خانه را سنگین کرده، با هم به زبان مشترک می‌رسیم.</p>
+            <ul class="service__topics" aria-label="موضوعات"><li>اختلاف نظر والدین در تربیت فرزندان</li><li>اختلاف والدین با فرزندان</li></ul>
+            <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
+          </li>
+          <li class="service card reveal service--s3">
             <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-smile"/></svg></span>
-            <h3>روان‌شناسی کودک و نوجوان</h3>
-            <p>همراهی با کودکان، نوجوانان و خانواده‌هایشان، با زبانی که برای هر سن قابل فهم و آرامش‌بخش باشد.</p>
+            <h3>روان‌شناسی کودک</h3>
+            <p>همراهی با کودک و خانواده، با زبانی که برای هر سن قابل فهم و آرامش‌بخش باشد.</p>
+            <ul class="service__topics" aria-label="موضوعات"><li>روش‌های تربیت و آموزش کودک</li><li>شب‌ادراری و انگشت‌مکیدن</li><li>کم‌رویی و اعتماد به نفس</li><li>مشکلات مدرسه</li><li>لجبازی</li><li>آزمون هوش و خلاقیت</li><li>پیشنهاد تفریح، ورزش و کلاس فوق‌برنامه</li></ul>
             <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
           </li>
-          <li class="service card reveal">
+          <li class="service card reveal service--s3">
             <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-clipboard"/></svg></span>
             <h3>ارزیابی روان‌شناختی</h3>
-            <p>بررسی دقیق و اصولی با ابزارهای استاندارد، برای شناخت بهتر وضعیت فعلی و برنامه‌ریزی مسیر بعدی.</p>
+            <p>بررسی علمی ویژگی‌های شخصیتی، هیجانی و رفتاری با آزمون‌های معتبر، برای شناخت دقیق‌تر توانمندی‌ها و نیازها.</p>
+            <ul class="service__topics" aria-label="موضوعات"><li>آزمون شخصیت</li><li>آزمون هوش</li><li>آزمون پیش از ازدواج</li><li>آزمون پیش از جدایی</li></ul>
             <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
           </li>
-          <li class="service card reveal">
-            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-wind"/></svg></span>
-            <h3>مدیریت استرس و اضطراب</h3>
-            <p>آشنایی با روش‌های علمی برای شناخت نشانه‌های استرس و اضطراب و یادگیری مهارت‌های روزمره برای مواجهه با آن‌ها.</p>
-            <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
+        </ul>
+
+        <h3 class="services__label reveal">گروه‌ها و کارگاه‌ها</h3>
+        <ul class="services__grid" data-stagger>
+          <li class="service card reveal service--s2">
+            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-group"/></svg></span>
+            <h3>گروه‌درمانی</h3>
+            <p>کنار افرادی با دغدغه‌های مشابه، زیر نظر درمانگر، بشنوید و شنیده شوید و تجربه‌ی تازه‌ای از ارتباط بسازید.</p>
+            <a class="service__link" href="gallery.html#group">مشاهده <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
           </li>
-          <li class="service card reveal">
-            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-sprout"/></svg></span>
-            <h3>رشد فردی و تغییر رفتار</h3>
-            <p>تمرکز بر هدف‌گذاری، عادت‌ها و الگوهای رفتاری، برای کسانی که می‌خواهند آگاهانه تغییر کنند و رشد کنند.</p>
-            <a class="service__link" href="#appointment" data-link="booking">رزرو نوبت <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
+          <li class="service card reveal service--s2">
+            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-book"/></svg></span>
+            <h3>کارگاه‌های عمومی</h3>
+            <p>کارگاه‌های آموزشی برای همه‌ی علاقه‌مندان، مثل تربیت فرزند و روابط خانوادگی، به زبانی ساده و کاربردی.</p>
+            <a class="service__link" href="gallery.html#public">مشاهده <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
+          </li>
+          <li class="service card reveal service--s2">
+            <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-award"/></svg></span>
+            <h3>کارگاه‌های تخصصی</h3>
+            <p>دوره‌هایی برای روان‌شناسان و مشاوران، از جمله دوره‌های سوپرویژن و آموزش‌های حرفه‌ای.</p>
+            <a class="service__link" href="gallery.html#specialized">مشاهده <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
           </li>
         </ul>
       </div>
@@ -193,22 +219,22 @@
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">تیم ما</p>
-          <h2 id="team-title">روان‌شناسانی که با دقت و احترام همراه شما هستند</h2>
-          <p class="lead">کارت اول اطلاعات واقعی است. دو کارت دیگر نمونه‌اند و باید پیش از انتشار با نام، تصویر و مشخصات تأییدشده‌ی همکاران جایگزین شوند.</p>
+          <h2 id="team-title">روان‌شناسانی که همراه شما هستند</h2>
+          <p class="lead">همه‌ی اعضای تیم دارای مدرک دکتری یا کارشناسی ارشد و پروانه‌ی فعالیت از سازمان نظام روان‌شناسی و مشاوره هستند. <span class="placeholder-tag">دو کارت دیگر نمونه‌اند</span></p>
         </div>
 
         <ul class="team__grid" data-stagger>
           <li class="member card reveal">
             <div class="member__photo member__photo--cutout">
-              <img src="assets/images/team-ishaghi.png" alt="سید مرتضی اسحاقی، موسس و مدیر کلینیک" width="413" height="442" loading="lazy" decoding="async">
+              <img src="assets/images/team-ishaghi.png" alt="دکتر سیدمرتضی اسحاقی، موسس و مدیر کلینیک" width="413" height="442" loading="lazy" decoding="async">
             </div>
             <div class="member__body">
-              <h3>سید مرتضی اسحاقی</h3>
+              <h3>دکتر سیدمرتضی اسحاقی</h3>
               <p class="member__role">موسس و مدیر کلینیک</p>
-              <p class="member__bio">دکتری روان‌شناسی بالینی با بیش از ۲۰ سال سابقه‌ی درمانی. حوزه‌ی کاری او خانواده‌درمانی و کار با زوج‌ها در مسیر بهتر شدن رابطه است.</p>
+              <p class="member__bio">روان‌شناس بالینی با بیش از ۲۵ سال سابقه‌ی درمانی. حوزه‌ی کاری او خانواده‌درمانی و کار با زوج‌ها در مسیر بهتر شدن رابطه است.</p>
               <div class="member__meta">
-                <span><b>تحصیلات:</b> دکتری روان‌شناسی بالینی</span>
-                <span><b>سابقه:</b> بیش از ۲۰ سال سابقه‌ی درمانی</span>
+                <span><b>تخصص:</b> روان‌شناس بالینی</span>
+                <span><b>سابقه:</b> بیش از ۲۵ سال</span>
               </div>
             </div>
           </li>
@@ -219,11 +245,12 @@
             </div>
             <div class="member__body">
               <h3>نام مشاور</h3>
-              <p class="member__role">عنوان تخصصی، مثلاً مشاور خانواده</p>
-              <p class="member__bio">در این بخش، معرفی کوتاهی از رویکرد درمانی، حوزه‌های کاری و تجربه‌ی حرفه‌ای همکار درج می‌شود.</p>
+              <p class="member__role">مشاور خانواده</p>
               <div class="member__meta">
                 <span><b>تحصیلات:</b> پس از تأیید درج شود</span>
-                <span><b>شماره‌ی پروانه:</b> پس از تأیید درج شود</span>
+                <span><b>سابقه:</b> پس از تأیید درج شود</span>
+                <span><b>شماره‌ی نظام:</b> پس از تأیید درج شود</span>
+                <span><b>حوزه‌ی کاری:</b> پس از تأیید درج شود</span>
               </div>
             </div>
           </li>
@@ -234,11 +261,12 @@
             </div>
             <div class="member__body">
               <h3>نام روان‌شناس کودک</h3>
-              <p class="member__role">عنوان تخصصی، مثلاً روان‌شناس کودک و نوجوان</p>
-              <p class="member__bio">در این بخش، معرفی کوتاهی از رویکرد درمانی، حوزه‌های کاری و تجربه‌ی حرفه‌ای همکار درج می‌شود.</p>
+              <p class="member__role">روان‌شناس کودک و نوجوان</p>
               <div class="member__meta">
                 <span><b>تحصیلات:</b> پس از تأیید درج شود</span>
-                <span><b>شماره‌ی پروانه:</b> پس از تأیید درج شود</span>
+                <span><b>سابقه:</b> پس از تأیید درج شود</span>
+                <span><b>شماره‌ی نظام:</b> پس از تأیید درج شود</span>
+                <span><b>حوزه‌ی کاری:</b> پس از تأیید درج شود</span>
               </div>
             </div>
           </li>
@@ -321,7 +349,7 @@
         <div class="section-head reveal">
           <p class="eyebrow">سوالات متداول</p>
           <h2 id="faq-title">پیش از اولین جلسه، شاید این‌ها را بپرسید</h2>
-          <p class="lead">پاسخ‌های این بخش نمونه است و باید با اطلاعات واقعی کلینیک تکمیل شود.</p>
+          <p class="lead">پاسخ‌های مربوط به هزینه و مدت جلسه هنوز تکمیل نشده‌اند.</p>
         </div>
 
         <div class="accordion card reveal" data-accordion>
@@ -344,7 +372,7 @@
               </button>
             </h3>
             <div class="accordion__panel" id="faq-2" role="region" aria-labelledby="faq-2-btn">
-              <div class="accordion__panel-inner"><div>مشاوره‌ی فردی، مشاوره‌ی زوج، روان‌شناسی کودک و نوجوان، ارزیابی روان‌شناختی، مدیریت استرس و اضطراب، و رشد فردی و تغییر رفتار. اگر مطمئن نیستید کدام خدمت مناسب‌تر است، هنگام رزرو یا تماس می‌توانید راهنمایی بگیرید.</div></div>
+              <div class="accordion__panel-inner"><div>مشاوره‌ی فردی، زوج، خانواده و کودک، ارزیابی روان‌شناختی، گروه‌درمانی و کارگاه‌های آموزشی عمومی و تخصصی. اگر مطمئن نیستید کدام خدمت مناسب شماست، پیش از رزرو با کلینیک تماس بگیرید تا راهنمایی شوید.</div></div>
             </div>
           </div>
           <div class="accordion__item">
@@ -377,7 +405,12 @@
               </button>
             </h3>
             <div class="accordion__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn">
-              <div class="accordion__panel-inner"><div>سیاست جابه‌جایی یا لغو نوبت را در اینجا بنویسید و پیش از انتشار با قوانین واقعی کلینیک تطبیق دهید. <span class="placeholder-tag">متن نمونه</span></div></div>
+              <div class="accordion__panel-inner"><div>اگر نمی‌توانید در نوبت حاضر شوید، هرچه زودتر اطلاع دهید. مبلغ بازگشتی بیعانه بر اساس زمان لغو است:
+                <ul class="policy">
+                  <li><b>تا ۲۴ ساعت پیش از جلسه</b><span>بازگشت کامل بیعانه</span></li>
+                  <li><b>حدود ۵ ساعت پیش از جلسه</b><span>بازگشت ۷۰ درصد</span></li>
+                  <li><b>کمتر از ۵ ساعت یا عدم حضور</b><span>بازگشت ۱۰ درصد</span></li>
+                </ul></div></div>
             </div>
           </div>
         </div>
@@ -449,6 +482,7 @@
             <li><a href="#services">خدمات</a></li>
             <li><a href="#team">تیم ما</a></li>
             <li><a href="#about">درباره‌ی کلینیک</a></li>
+            <li><a href="gallery.html">گالری و برنامه‌ها</a></li>
             <li><a href="blog.html">مقالات</a></li>
             <li><a href="#faq">سوالات متداول</a></li>
           </ul>

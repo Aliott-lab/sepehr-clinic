@@ -677,3 +677,11 @@ dl, dd { margin: 0; }
   .shot__btn, .shot__media img { transition: none; }
   .shot__btn:hover, .shot__btn:hover .shot__media img { transform: none; }
 }
+
+
+/* 20. TEAM PAGE + gap fix ------------------------------------------------- */
+.page-head + .section.gx, .page-head + .section.team-page { padding-block-start: var(--space-4); }
+.team__more { display: flex; justify-content: center; margin-block-start: var(--space-8); }
+.team-page .team__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 64rem) { .team-page .team__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 40rem) { .team-page .team__grid { grid-template-columns: 1fr; } }
